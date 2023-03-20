@@ -1,0 +1,60 @@
+
+          <html>
+            <body><!DOCTYPE html>
+<html>
+    <head>
+        <title> Sign Up </title>
+    </head>
+        <body style="text-align: center;">
+            <h1> Sign Up </h1>
+                <br>
+                <br>
+                <form onsubmit="validate()">
+                    Name: <input type="text" id="name">
+                        <br>
+                        <br>
+                    E-mail: <input type="email">
+                        <br>
+                        <br>
+                    Birthday: <input type="date">
+                        <br>
+                        <br>
+                    Username: <input type="text" id="username">
+                        <br>
+                        <br>
+                    Password: <input type="password" id="pwd">
+                        <br>
+                        <br>
+                    Confirm Password: <input type="password" id="cpwd">
+                            <br>
+                            <br>
+                            <br>
+                        <input type="submit">
+                </form>
+        </body>
+<html></body>
+            <style>h1{
+    background-color: blanchedalmond;
+}
+
+body{
+    background-color: crimson;
+}</style>
+            <script>function validate(){
+        var pwd = document.getElementById("pwd").value
+        var cpwd = document.getElementById("cpwd").value
+        var name = document.getElementById("name").value
+        var username = document.getElementById("username").value
+
+        if(pwd!=cpwd)
+        alert("Passwords don't match")
+        if(name=="")
+        alert("Name cannot be empty")
+        if(username=="")
+        alert("Username cannot be empty")        
+
+
+}
+</script>
+          </html>
+        
